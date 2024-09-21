@@ -7,10 +7,14 @@ public class SpikeTrap : MonoBehaviour
 {
     private bool isActivated = false;
     private Animator animator;
+    public AudioClip spikeSound;
+    private AudioSource audioSource;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = spikeSound;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -29,6 +33,7 @@ public class SpikeTrap : MonoBehaviour
                 player.Die();
             }
 
+            audioSource.Play();
             isActivated = true;
             animator.SetBool("isActivated", true);
             GetComponent<Collider>().enabled = false;

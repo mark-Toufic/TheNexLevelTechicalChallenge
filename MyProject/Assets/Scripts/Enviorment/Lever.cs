@@ -7,12 +7,12 @@ public class Lever : MonoBehaviour
 {
     private Animator anim;
     public Animator lockedGate;
-    private BoxCollider triggerBox;
+    public BoxCollider triggerBox;
     private bool isEnemyInTrigger = false;
 
     [Header("Aduio")]
     public AudioClip leverSound;
-    public AudioClip doorSOund;
+    public AudioClip doorSound;
     private AudioSource audioSource;
 
     void Start()
@@ -43,11 +43,9 @@ public class Lever : MonoBehaviour
         if (isEnemyInTrigger && Input.GetKey(KeyCode.E))
         {
             audioSource.clip = leverSound;
-            audioSource.clip = doorSOund;
             audioSource.Play();
             anim.SetBool("isPulled", true);
             lockedGate.SetBool("isOpened", true);
-            Debug.Log("isClicking");
         }
     }
 }

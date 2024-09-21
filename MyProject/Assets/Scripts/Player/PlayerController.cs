@@ -275,7 +275,6 @@ public class PlayerController : MonoBehaviour
                 isControllingEnemy = true;
                 enemyController.freeCam.SetActive(true);
                 playerAnim.SetBool("isControlling", true);
-                spellPNG.SetActive(true);
             }
         }
     }
@@ -294,7 +293,6 @@ public class PlayerController : MonoBehaviour
                     enemyController.freeCam.SetActive(false);
                     isControllingEnemy = false;
                     playerAnim.SetBool("isControlling", false);
-                    spellPNG.SetActive(false);
                 }
             }
         }

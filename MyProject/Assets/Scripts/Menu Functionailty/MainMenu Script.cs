@@ -9,6 +9,7 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
         Debug.Log("Switching to scene: " + sceneName);
+        Time.timeScale = 1;
     }
 
     public void Exit()
