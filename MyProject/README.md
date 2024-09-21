@@ -2,7 +2,9 @@
 Mark Toufic's submission for NEX Level Gaming Technical Interview Challenge.
 
 ***DISCLAIMER***
-ALL ART ASSETS DOWNLOADED FROM UNITY ASSETS TORE
+ALL ART ASSETS DOWNLOADED FROM UNITY ASSET STORE
+
+Playable Build Located in Folder Build as My project
 
 
 What is my game?
